@@ -1,1 +1,32 @@
-body { font-family: sans-serif; margin: 40px; }
+:root {
+  --bg: #fdfdfd;
+  --fg: #222;
+  --accent: #3b7ddd;
+}
+body.dark {
+  --bg: #1b1d21;
+  --fg: #e6e6e6;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  line-height: 1.6;
+}
+nav {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  background: var(--bg);
+}
+nav a { color: var(--accent); text-decoration: none; }
+#theme-toggle { margin-left: auto; background: none; border: 0; color: var(--fg); font-size: 1.2rem; cursor: pointer; }
+header, section { max-width: 720px; margin: 0 auto; padding: 2rem; }
+.tagline { opacity: .7; }
+.cards { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
+.cards li { border: 1px solid #8884; border-radius: 8px; padding: 1rem; }
+@media (max-width: 600px) { header, section { padding: 1rem; } }

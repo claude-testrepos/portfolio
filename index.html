@@ -2,11 +2,36 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Your Name</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Hi, I'm Your</h1>
-  <p>Computer science student.</p>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+    <button id="theme-toggle" aria-label="Toggle dark mode">&#9790;</button>
+  </nav>
+  <header>
+    <h1>Hi, I'm Your</h1>
+    <p class="tagline">CS student &middot; I like building things.</p>
+  </header>
+  <section id="about">
+    <h2>About</h2>
+    <p>I'm studying computer science. Currently learning Java, Python and some web stuff.</p>
+  </section>
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul class="cards">
+      <li><h3>Text Adventure</h3><p>A tiny game written in Python.</p></li>
+      <li><h3>Data Structures</h3><p>Linked lists, stacks, queues and trees in Java.</p></li>
+    </ul>
+  </section>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Find me on GitHub.</p>
+  </section>
+  <script src="main.js"></script>
 </body>
 </html>
